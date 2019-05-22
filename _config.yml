@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Samuel Muñoz Ortega
-description: Web developer
+description: Just another full stack developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "smunozdev.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_repo: smunozdev # the GitHub repo name for your project
