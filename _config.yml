@@ -1,11 +1,35 @@
-# basic options
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 title: Samuel Muñoz Ortega
-author: Samuel Muñoz Ortega
-email: samuel3801@gmail.com
 description: Just another full stack developer
-twitter_username: smunozdev
+keywords: "github, github-pages, gh-pages, smunozdev, smunoz, smuñoz, backend, frontend, full-stack, developer, portfolio, blog"
+baseurl: "/smunozdev" # the subpath of your site, e.g. /blog
+url: "https://smunozdev.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_repo: smunozdev # the GitHub repo name for your project
 github_username: smunozdev
+
+# Optional social link, you can choose from the following options:
+# twitter (default), instagram, medium, or dribbble
+social_link: 
+social_username: smunozdev
+
+# Set theme color here
+# Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
+remote_theme: broccolini/swiss
+theme_color: orange
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-modernist
