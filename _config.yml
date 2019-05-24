@@ -1,0 +1,11 @@
+# basic options
+title: Samuel Muñoz Ortega
+author: Samuel Muñoz Ortega
+email: samuel3801@gmail.com
+description: Just another full stack developer
+twitter_username: smunozdev
+github_username: smunozdev
+
+# Build settings
+markdown: kramdown
+theme: minima
