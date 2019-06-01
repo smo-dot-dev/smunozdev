@@ -20,26 +20,31 @@
       </div>
 
       <div class="container mx-auto px-2 mb-2 clearfix header-text">
-        <h1 class="h0 inline-block col-9 sm-width-full py-4 mt-3 header-title">{{ site.title }}</h1>
-        <div class="clearfix mb-4 py-1">
-          <div class="sm-width-full left border-top-thin">
-            <div class="table">
-              <div class="inline-block mt-3 mr-1">
-                {% include linkedin.html %}
+          <h1 class="h0 inline-block sm-width-full col-6 mt-3 header-title left">{{ site.title }}</h1>
+          <div class="col-6 right" style="width:420px;height:420px;margin-top: 60px;background-color:#fa8225;" id="canvasthree"></div>
+          <div class="clearfix mb-2 py-1">
+            <div class="sm-width-full left">
+              <div class="table">
+                <!--
+                  <div class="inline-block mt-3 mr-1">
+                    {% include dot-accent.html %}
+                  </div>
+                  -->
+                <div class="inline-block mt-3 mr-1">
+                  {% include linkedin.html %}
+                </div>
+                <div class="inline-block mt-3">
+                  {% include github.html %}
+                </div>
+  
               </div>
-              <div class="inline-block mt-3">
-                {% include github.html %}
-              </div>
-
+              <!-- Set site description in config.yml -->
+              <p class="h4 lh-condensed font-smoothing mt-2 py-1">{{ site.description }}</p>
             </div>
-            <!-- Set site description in config.yml -->
-            <p class="h4 lh-condensed font-smoothing mt-2 py-1">{{ site.description }}</p>
           </div>
+  
         </div>
-
-        <div class="container" style="background:red;display:block;position:absolute;float:right;"></div>
-      </div>
-    </header>
+      </header>
 
     <div class="container mx-auto px-2 py-4">
       {% for post in site.posts %}

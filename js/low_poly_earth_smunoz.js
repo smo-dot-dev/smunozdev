@@ -1,9 +1,10 @@
 var camera, scene, renderer, effect
 var mesh
 
+
 var animate = function () {
     requestAnimationFrame(animate)
-    mesh.rotation.z += 0.01
+    mesh.rotation.z += 0.016
     //effect.render( scene, camera )
     renderer.render(scene, camera)
 }
@@ -12,25 +13,35 @@ var material1 = new THREE.MeshStandardMaterial( {
     premultipliedAlpha: true,
     transparent: true
 } );
-var material2 = new THREE.MeshStandardMaterial( {
-    wireframe: true
-} );
 
-var setMaterial = function(material){
-    mesh.children[2].material[0] = material1
-    mesh.children[2].material[1] = material1
-    mesh.children[2].material[2] = material1
+var material2a, material2b
 
-    mesh.children[3].material[0] = material1
-    mesh.children[3].material[1] = material1
-    mesh.children[3].material[2] = material1
+var m1enabled = false
+
+var toggleMaterial1 = function(){
+    if (!m1enabled) {
+        mesh.children[2].material[0] = material1
+        mesh.children[3].material[0] = material1
+        m1enabled = true
+    }else{
+        mesh.children[2].material[0] = material2a
+        mesh.children[3].material[0] = material2b
+        m1enabled = false
+    }
 }
 
-var disableMaterial = function() {
-    
+var toggleMaterial2 = function(){
+    if (mesh.children[2].material[0].wireframe) {
+        mesh.children[2].material[0].wireframe = false
+        mesh.children[2].material[1].wireframe = false
+        mesh.children[2].material[2].wireframe = false
+    }else{
+        mesh.children[2].material[0].wireframe = true
+        mesh.children[2].material[1].wireframe = true
+        mesh.children[2].material[2].wireframe = true
+    }
 }
 
-var container = document.getElementById('canvasthree')
 
 function earth_init() {
     
@@ -42,6 +53,8 @@ function earth_init() {
         scene.add(mesh)
         mesh.rotation.x += 0.6
         console.log("Tierra añadida")
+        material2a= mesh.children[2].material[0]
+        material2b= mesh.children[3].material[0]
         animate()
     }
 
@@ -64,8 +77,9 @@ function earth_init() {
     scene.add( new THREE.AmbientLight( 0xffffff, 0.5))
     
     //CÁMARA
-    camera = new THREE.PerspectiveCamera(80, window.innerWidth / window.innerHeight, 0.1, 1000)
-    camera.position.z = 1.75
+    camera = new THREE.PerspectiveCamera(80, 1, 0.1, 1000)
+    camera.position.z = 1.62
+    
     
     //PRECARGA MODELO
     loader = new THREE.ColladaLoader()
@@ -76,12 +90,13 @@ function earth_init() {
     renderer = new THREE.WebGLRenderer({
         antialias: false
     })
-    renderer.setSize($(container).width(), $(container).height())
+    var container = document.getElementById('canvasthree')
+    renderer.setSize(420,420) //Uso valores literales pa no usar jquery
     renderer.domElement.style.color = 0xfa8225
     container.appendChild(renderer.domElement)
 
     //CARGA MODELO Y en callback se llama animate()
-    loader.load('low_poly_earth.dae', onError, onProgress, onError)
+    loader.load('./js/low_poly_earth.dae', onLoad, onProgress, onError)
 
     // effect = new THREE.AsciiEffect( renderer, ' .:-+*=%@#', { invert: true } )
     // effect.setSize( window.innerWidth, window.innerHeight )

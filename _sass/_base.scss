@@ -60,3 +60,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.onmouseovereado {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  }
