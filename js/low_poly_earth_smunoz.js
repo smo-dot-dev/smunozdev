@@ -23,10 +23,12 @@ var toggleMaterial1 = function(){
         mesh.children[2].material[0] = material1
         mesh.children[3].material[0] = material1
         m1enabled = true
+        $("#linkedin").addClass("invertir")
     }else{
         mesh.children[2].material[0] = material2a
         mesh.children[3].material[0] = material2b
         m1enabled = false
+        $("#linkedin").removeClass("invertir")
     }
 }
 
@@ -35,11 +37,15 @@ var toggleMaterial2 = function(){
         mesh.children[2].material[0].wireframe = false
         mesh.children[2].material[1].wireframe = false
         mesh.children[2].material[2].wireframe = false
+        $("#github").removeClass("invertir")
     }else{
         mesh.children[2].material[0].wireframe = true
         mesh.children[2].material[1].wireframe = true
         mesh.children[2].material[2].wireframe = true
+        
+        $("#github").addClass("invertir")
     }
+    
 }
 
 
