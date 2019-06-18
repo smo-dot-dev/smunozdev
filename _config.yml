@@ -13,8 +13,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Samuel Muñoz Ortega
-description: Full stack web developer living in Girona
-keywords: "github, github-pages, gh-pages, smunozdev, smunoz, smuñoz, backend, frontend, full-stack, developer, portfolio, blog"
+description: Web developer focused on backend and ML research
+keywords: "github, github-pages, gh-pages, smunozdev, smunoz, smuñoz, backend, full-stack, developer, portfolio, blog"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://smunoz.dev" # the base hostname & protocol for your site, e.g. http://example.com
 github_repo: smunozdev # the GitHub repo name for your project
