@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Generar rap con modelo de Modelo Markov y buscar rimas por fuerza bruta
-date:  2019-18-06
+date:  2019-06-18
 ---
 He generado varios modelos de markov con state_size 1, 2 y 3, y luego he hecho una búsqueda de rima mirando vocales.
 En el futuro, cabe implementar:

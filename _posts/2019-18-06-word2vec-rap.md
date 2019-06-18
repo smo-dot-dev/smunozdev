@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Red neuronal Word2Vec aprende la semántica del rap español
-date:  2019-18-06
+date:  2019-06-18
 ---
 Word2Vec es un modelo que convierte palabras en vectores que guardan la relación semántica respecto al resto de palabras. Permite predecir el contexto dada una palabra (palabras que le "rodean") con skip-gram, o predecir una palabra dado un contexto con CBOW.
 
