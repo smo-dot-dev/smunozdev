@@ -97,7 +97,7 @@ function earth_init() {
         antialias: false
     })
     var container = document.getElementById('canvasthree')
-    renderer.setSize(420,420) //Uso valores literales pa no usar jquery
+    renderer.setSize(400,400) //Uso valores literales pa no usar jquery
     renderer.domElement.style.color = 0xfa8225
     container.appendChild(renderer.domElement)
 
