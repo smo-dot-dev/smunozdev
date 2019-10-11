@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Red neuronal Word2Vec aprende la semántica del rap español
+title:  Red neuronal aprende la semántica del rap hispano de forma no supervisada
 date:  2019-06-18
 ---
 # Red neuronal aprende la semántica del rap hispano de forma no supervisada
