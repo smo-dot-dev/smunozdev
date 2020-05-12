@@ -1,36 +1,56 @@
-# Welcome to Jekyll!
-# This config file is meant for settings that affect your whole site, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Set theme
+remote_theme: daviddarnes/alembic
+
+# File excludes
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+
+# Set plugins
+plugins:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-default-layout
+- jekyll-feed
+- jemoji
+- jekyll-remote-theme
 
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Samuel Muñoz Ortega
-description: Web developer focused on backend and ML research
-keywords: "github, github-pages, gh-pages, smunozdev, smunoz, smuñoz, backend, full-stack, developer, portfolio, blog"
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://smunoz.dev" # the base hostname & protocol for your site, e.g. http://example.com
-github_repo: smunozdev # the GitHub repo name for your project
-github_username: smunozdev
+url: 'https://mydomain.com'
+baseurl: ''
+title: 'My website'
+description: 'This is my new website'
+permalink: pretty
+logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=52"
 
-# Optional social link, you can choose from the following options:
-# twitter (default), instagram, medium, or dribbble
+# Pagination
+paginate: 5
+paginate_path: blog/page:num
 
-# Set theme color here
-# Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
-#remote_theme: broccolini/swiss
-theme_color: orange
+# Header nav
+navigation_header:
+- title: Home
+  url: /
+- title: About
+  url: /about/
+- title: Blog
+  url: /blog/
 
-# Build settings
-markdown: kramdown
-github: [metadata]
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
+# Footer nav
+navigation_footer:
+- title: Back to top
+  url: "#top"
+
+# Collections
+collections:
+  posts:
+    title: Posts
+    output: true
+    description: "My thoughts and ideas"
+    feature_text: |
+      Welcome to my blog
+    feature_image: "https://picsum.photos/2560/600?image=866"
