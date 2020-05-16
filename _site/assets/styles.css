@@ -438,21 +438,21 @@ body {
       font-size: 1.1578947368rem; } }
 
 a {
-  color: #05bf85;
+  color: #000122;
   text-decoration: none;
   transition: color .1s, background-color .1s; }
   a:hover, a:active, a:focus {
-    color: #008000;
+    color: #001c97;
     text-decoration: none; }
 
 .typeset p a, .typeset li a {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #05bf85 50%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #000122 50%);
   background-position: 0 93%;
   background-repeat: repeat-x;
   background-size: 100% 0.15rem;
   text-shadow: 0.1rem 0 #ffffff, 0.15rem 0 #ffffff, -0.1rem 0 #ffffff, -0.15rem 0 #ffffff; }
   .typeset p a:hover, .typeset p a:active, .typeset p a:focus, .typeset li a:hover, .typeset li a:active, .typeset li a:focus {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #008000 50%); }
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #001c97 50%); }
 .typeset p {
   line-height: 2rem;
   margin-bottom: 1.49999rem;
@@ -476,7 +476,7 @@ a {
       padding-top: 0.5657994737rem; } }
 .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
   color: #242e2b;
-  font-family: "Merriweather", serif;
+  font-family: deltaray, serif;
   font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
   font-style: normal;
   font-weight: 700; }
@@ -722,7 +722,7 @@ a {
   font-size: 1.1916666667rem;
   margin-bottom: -0.553135rem;
   padding-top: 0.553135rem;
-  font-family: "Merriweather", serif;
+  font-family: deltaray, serif;
   font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
   font-style: normal;
   font-weight: 400;
@@ -779,7 +779,7 @@ a {
   font-style: italic; }
 .typeset small, .typeset .caption {
   font-size: 1.0666666667rem;
-  font-family: "Merriweather", serif;
+  font-family: deltaray, serif;
   font-style: normal;
   font-weight: 400; }
   @media screen and (min-width: 40em) {
@@ -822,7 +822,7 @@ a {
 .typeset .delta + .caption, .typeset .epsilon + .caption, .typeset .zeta + .caption {
   margin-top: 0rem; }
 .typeset blockquote p {
-  border-left: 0.15rem solid #05bf85;
+  border-left: 0.15rem solid #000122;
   font-style: italic;
   padding-left: 1rem;
   margin-bottom: 1.99999rem;
@@ -1505,7 +1505,7 @@ button,
   cursor: pointer;
   display: inline-block;
   color: #ffffff;
-  background: #05bf85;
+  background: #000;
   transition: box-shadow .1s;
   will-change: box-shadow;
   box-shadow: inset 0 0 0 2rem transparent; }
@@ -1522,7 +1522,7 @@ button,
 
 .button--nav {
   background: none;
-  color: #05bf85;
+  color: #000122;
   margin-bottom: 0;
   min-height: 4rem;
   min-width: 4rem; }
@@ -1531,7 +1531,7 @@ button,
       display: none; } }
   .button--nav:hover, .button--nav:focus {
     box-shadow: none;
-    color: #008000; }
+    color: #001c97; }
 
 a:focus, a:hover:focus,
 button:focus,
@@ -1646,3 +1646,12 @@ pre code {
 .typeset pre {
   white-space: pre;
   overflow-x: scroll; }
+
+@font-face {
+  font-family: deltaray;
+  src: url("fonts/deltaray.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/deltaray.eot?#iefix") format("embedded-opentype"), url("fonts/deltaray.woff") format("woff"), url("fonts/deltaray.ttf") format("truetype"), url("fonts/deltaray.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+.header {
+  font-family: "deltaray", sans-serif; }

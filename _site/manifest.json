@@ -1,9 +1,17 @@
 {
-  "lang": "en-US",
-  "name": "My website",
-  "short_name": "Mywebsite",
+  "lang": "en-GB",
+  "name": "Samuel Muñoz Ortega",
+  "short_name": "SamuelMuñozOrtega",
   "theme_color": "#24292e",
   "background_color": "#ffffff",
-  "start_url": "/",
+  
+    "icons": [
+      
+        {
+          "src": "/assets/logos/logo@16px.png",
+          "sizes": "16x16"
+        }
+      
+    ],"start_url": "/",
   "display": "standalone"
 }

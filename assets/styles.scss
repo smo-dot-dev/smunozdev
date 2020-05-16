@@ -1,0 +1,20 @@
+---
+title: false
+styles: true
+---
+
+@import "alembic";
+
+
+@font-face {
+    font-family: deltaray;
+    src: url("fonts/deltaray.eot"); /* IE9 Compat Modes */
+    src: url("fonts/deltaray.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("fonts/deltaray.woff") format("woff"), /* Modern Browsers */
+         url("fonts/deltaray.ttf")  format("truetype"), /* Safari, Android, iOS */
+         url("fonts/deltaray.svg#svgFontName") format("svg"); /* Legacy iOS */
+  }
+
+.header{
+    font-family: "deltaray", sans-serif;
+}
