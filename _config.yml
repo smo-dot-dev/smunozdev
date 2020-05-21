@@ -1,0 +1,83 @@
+# Set theme
+remote_theme: daviddarnes/alembic
+
+# File excludes
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+
+# Set plugins
+plugins:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-default-layout
+- jekyll-feed
+- jemoji
+- jekyll-remote-theme
+
+# Site settings
+encoding: utf-8 # Make sure the encoding is right
+lang: en-GB # Set the site language
+url: 'https://www.smunoz.dev'
+baseurl: '/'
+title: 'Samuel Muñoz Ortega'
+description: 'Self-taught developer'
+permalink: pretty
+repo: "https://github.com/smunozdev/smunozdev"
+email: "info@smunoz.dev"
+keywords: "github, github-pages, gh-pages, smunozdev, smunoz, smuñoz, samuel, muñoz, ortega, self-taught, self, taught, developer, portfolio, blog"
+github_repo: smunozdev # the GitHub repo name for your project
+github_username: smunozdev
+# Pagination
+paginate: 5
+paginate_path: blog/page:num
+
+jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
+
+twitter:
+  username: smunozdev # jekyll-seo-tag > Owners twitter username
+author: smunozdev # jekyll-seo-tag > default author
+social: # jekyll-seo-tag > social overrides
+  name: Samuel Muñoz Ortega # jekyll-seo-tag > real name
+  links:  # jekyll-seo-tag > social aliases (sameAs)
+    - https://www.twitter.com/smunozdev
+    - https://www.linkedin.com/in/daviddarnes
+    - https://www.github.com/daviddarnes
+
+social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
+  Twitter: https://www.twitter.com/smunozdev
+  LinkedIn: https://www.linkedin.com/in/smunozdev
+  GitHub: https://www.github.com/smunozdev
+  link: https://www.smunoz.dev
+
+  
+sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
+ Twitter: "#1DA1F2"
+ LinkedIn: "#0077B5"
+ Email: true
+
+favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
+  16: '/assets/logos/favicon.png'
+
+# Header nav
+navigation_header:
+- title: Home
+  url: /
+- title: About
+  url: /about/
+- title: Blog
+  url: /blog/
+- title: Categories
+  url: /categories/
+- title: Search
+  url: /search/
+
+
+# Collections
+collections:
+  posts:
+    output: true
