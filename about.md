@@ -1,6 +1,11 @@
 ---
-layout: page
-title: About this website
+title:
+indexing: false
+sitemap: false
 ---
+# Samuel Muñoz Ortega
 
-I'm not sure yet what this website is about, but I'm sure I'll work it out soon.
+Self-taught developer, working as a dev while studying Computer Science at UOC.
+
+
+

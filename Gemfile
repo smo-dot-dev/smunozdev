@@ -10,3 +10,4 @@ gem "jekyll-default-layout", "~> 0.1"
 gem "jekyll-feed", "~> 0.9"
 gem "jemoji", "~> 0.9"
 gem "jekyll-remote-theme", "~> 0.3"
+gem 'wdm', '>= 0.1.0' if Gem.win_platform? 

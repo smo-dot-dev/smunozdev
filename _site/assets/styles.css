@@ -1,9 +1,10 @@
+@charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+@import url("https://fonts.googleapis.com/css?family=Oxanium:400,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -420,7 +421,7 @@ html {
 
 body {
   font-size: 1.3333333333rem;
-  font-family: Georgia, serif;
+  font-family: Oxanium, serif;
   font-style: normal;
   font-weight: 400;
   line-height: 2rem; }
@@ -438,21 +439,12 @@ body {
       font-size: 1.1578947368rem; } }
 
 a {
-  color: #000122;
-  text-decoration: none;
-  transition: color .1s, background-color .1s; }
+  color: 49, 49, 255;
+  text-decoration: none; }
   a:hover, a:active, a:focus {
-    color: #001c97;
+    color: #f79c00;
     text-decoration: none; }
 
-.typeset p a, .typeset li a {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #000122 50%);
-  background-position: 0 93%;
-  background-repeat: repeat-x;
-  background-size: 100% 0.15rem;
-  text-shadow: 0.1rem 0 #ffffff, 0.15rem 0 #ffffff, -0.1rem 0 #ffffff, -0.15rem 0 #ffffff; }
-  .typeset p a:hover, .typeset p a:active, .typeset p a:focus, .typeset li a:hover, .typeset li a:active, .typeset li a:focus {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #001c97 50%); }
 .typeset p {
   line-height: 2rem;
   margin-bottom: 1.49999rem;
@@ -475,8 +467,8 @@ a {
       margin-bottom: 1.4342005263rem;
       padding-top: 0.5657994737rem; } }
 .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
-  color: #242e2b;
-  font-family: deltaray, serif;
+  color: #101010;
+  font-family: "Oxanium", serif;
   font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
   font-style: normal;
   font-weight: 700; }
@@ -722,7 +714,7 @@ a {
   font-size: 1.1916666667rem;
   margin-bottom: -0.553135rem;
   padding-top: 0.553135rem;
-  font-family: deltaray, serif;
+  font-family: "Oxanium", serif;
   font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
   font-style: normal;
   font-weight: 400;
@@ -779,7 +771,7 @@ a {
   font-style: italic; }
 .typeset small, .typeset .caption {
   font-size: 1.0666666667rem;
-  font-family: deltaray, serif;
+  font-family: "Oxanium", serif;
   font-style: normal;
   font-weight: 400; }
   @media screen and (min-width: 40em) {
@@ -822,7 +814,7 @@ a {
 .typeset .delta + .caption, .typeset .epsilon + .caption, .typeset .zeta + .caption {
   margin-top: 0rem; }
 .typeset blockquote p {
-  border-left: 0.15rem solid #000122;
+  border-left: 0.15rem solid 49, 49, 255;
   font-style: italic;
   padding-left: 1rem;
   margin-bottom: 1.99999rem;
@@ -857,7 +849,7 @@ a {
   padding-top: 3rem; }
 .typeset code, .typeset pre {
   background-color: #fafafa;
-  font-family: Menlo, monospace; }
+  font-family: monospace; }
 .typeset pre {
   display: block;
   margin-bottom: 2rem;
@@ -1164,7 +1156,7 @@ a {
 /* Literal.Number.Integer.Long */
 body {
   background: #ffffff;
-  color: #384743;
+  color: #101010;
   height: 100%;
   display: flex;
   -webkit-box-direction: normal;
@@ -1230,7 +1222,7 @@ body {
   padding-bottom: .4rem;
   margin-bottom: 1.6rem;
   text-align: center;
-  background: #f9fafa;
+  background: #888;
   background-size: cover;
   background-position: center; }
   .feature .container {
@@ -1277,7 +1269,7 @@ body {
   display: inline-block; }
 
 .footer {
-  background: #242e2b;
+  background: #101010;
   color: #a8adac; }
   .footer a {
     color: #a8adac; }
@@ -1505,7 +1497,7 @@ button,
   cursor: pointer;
   display: inline-block;
   color: #ffffff;
-  background: #000;
+  background: #101010;
   transition: box-shadow .1s;
   will-change: box-shadow;
   box-shadow: inset 0 0 0 2rem transparent; }
@@ -1522,7 +1514,7 @@ button,
 
 .button--nav {
   background: none;
-  color: #000122;
+  color: 49, 49, 255;
   margin-bottom: 0;
   min-height: 4rem;
   min-width: 4rem; }
@@ -1531,7 +1523,7 @@ button,
       display: none; } }
   .button--nav:hover, .button--nav:focus {
     box-shadow: none;
-    color: #001c97; }
+    color: #f79c00; }
 
 a:focus, a:hover:focus,
 button:focus,
@@ -1544,7 +1536,7 @@ textarea:focus,
 textarea:hover:focus,
 select:focus,
 select:hover:focus {
-  outline: solid 0.12rem #fa407a;
+  outline: solid 0.12rem #f79c00;
   outline-offset: -.12rem; }
 
 a:hover:focus {
@@ -1564,7 +1556,7 @@ select {
   input[type="color"]:hover,
   textarea:hover,
   select:hover {
-    border-color: #384743; }
+    border-color: #101010; }
 
 select {
   background: #fafafa; }
@@ -1595,7 +1587,7 @@ label {
 
 code {
   padding: .12rem .2rem;
-  color: #242e2b; }
+  color: #101010; }
 
 pre code {
   padding: 0; }
@@ -1616,7 +1608,7 @@ pre code {
   opacity: 0.5; }
 
 ::selection {
-  background: #242e2b;
+  background: #101010;
   color: #ffffff;
   text-shadow: none; }
 
@@ -1654,4 +1646,69 @@ pre code {
   src: url("fonts/deltaray.eot?#iefix") format("embedded-opentype"), url("fonts/deltaray.woff") format("woff"), url("fonts/deltaray.ttf") format("truetype"), url("fonts/deltaray.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 .header {
-  font-family: "deltaray", sans-serif; }
+  font-family: "deltaray", sans-serif;
+  color: #101010;
+  background: #6b635a;
+  border-bottom: 1px black solid; }
+
+.footer {
+  background: #6b635a;
+  border-top: 1px black solid; }
+
+.footer a {
+  color: #CECEC6;
+  font-size: 0.5em; }
+
+.item--nav {
+  margin-left: 3rem;
+  font-size: 1rem;
+  float: left; }
+
+.item--nav a {
+  font-size: 1.4em;
+  color: #101010; }
+  .item--nav a:hover, .item--nav a:active, .item--nav a:focus {
+    color: #f79c00; }
+
+.item--current a {
+  color: #CECEC6; }
+  .item--current a:hover, .item--current a:active, .item--current a:focus {
+    color: #f79c00; }
+
+.button--nav {
+  color: #101010; }
+  .button--nav:hover, .button--nav:active, .button--nav:focus {
+    color: #f79c00; }
+
+.article--post h1 {
+  padding-top: 1em; }
+
+.art--title a {
+  font-family: "deltaray", Arial, Helvetica, sans-serif;
+  font-size: 2.1em;
+  color: #101010; }
+  .art--title a:hover, .art--title a:active, .art--title a:focus {
+    color: #f79c00;
+    color: #f79c00;
+    text-shadow: #f79c00 1px 0 2px; }
+
+#smunozterm {
+  margin-top: 1em;
+  display: block; }
+
+#samuel-muñoz-ortega {
+  font-family: "deltaray", Arial, Helvetica, sans-serif;
+  font-size: 2.5em; }
+
+#social {
+  margin: 0 auto;
+  position: fixed;
+  margin-left: 10em;
+  float: right; }
+
+#wrapper {
+  float: left; }
+
+#socialbtn:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%); }

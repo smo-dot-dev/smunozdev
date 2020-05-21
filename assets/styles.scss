@@ -17,4 +17,89 @@ styles: true
 
 .header{
     font-family: "deltaray", sans-serif;
+    color: #101010;
+    background: #6b635a;
+    border-bottom: 1px black solid;
+}
+
+.footer {
+    background: #6b635a;
+    border-top: 1px black solid;
+}
+
+.footer a {
+    color:#CECEC6;
+    font-size:0.5em;
+}
+
+.item--nav {
+    margin-left: 3rem;
+    font-size:1rem;
+    float:left;
+}
+
+
+.item--nav a {
+  font-size:1.4em;
+  color: #101010;
+  &:hover, &:active, &:focus {
+    color: #f79c00;
+  }
+}
+
+
+.item--current a {
+    color: #CECEC6;
+    &:hover, &:active, &:focus {
+      color: #f79c00;
+    }
+  }
+
+.button--nav{
+    color: #101010;
+  &:hover, &:active, &:focus {
+    color: #f79c00;
+  }
+}
+.article--post h1{
+  padding-top: 1em;
+
+}
+
+.art--title a{
+    font-family:"deltaray", Arial, Helvetica, sans-serif;
+    font-size:2.1em;
+    color:#101010;
+    &:hover, &:active, &:focus {
+      color: #f79c00;
+            color: #f79c00;
+            text-shadow: #f79c00 1px 0 2px; 
+      }
+}
+
+#smunozterm{
+  margin-top:1em;
+  display:block;
+}
+
+#samuel-muñoz-ortega{
+  font-family:"deltaray", Arial, Helvetica, sans-serif;
+  font-size:2.5em;
+}
+
+#social{
+  margin:0 auto;
+  position:fixed;
+  margin-left:10em;
+  float:right;  
+
+}
+
+#wrapper{
+float:left;  
+}
+
+#socialbtn:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
